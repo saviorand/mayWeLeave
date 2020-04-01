@@ -19,17 +19,17 @@ export const Card = props => {
   } = props
 
   return (
-    <div className="shadow-sm rounded-md hover:bg-blue-100">
+    <div className="p-2 shadow-sm rounded-md hover:bg-blue-100">
 
       <Link to={`/${slug}`} state={{ navigation }} asModal className="">
 
-        <div className="flex flex-wrap w-full overflow-hidden items-center">
-        <div className="flex flex-wrap w-1/5">
+        <div className="flex w-full overflow-hidden items-center">
+        <div className="flex mx-2 justify-start items-center w-2/5 md:w-1/5">
           <div className="w-8 mx-4">
           <Img fluid={cover.childImageSharp.fluid} alt={name} />
           </div>
 
-          <h1 className="text-2xl text-blue-500 font-bold leading-snug">
+          <h1 className="text-sm md:text-md lg:text-lg text-blue-500 font-bold leading-snug">
             {name}
           </h1>
           </div>

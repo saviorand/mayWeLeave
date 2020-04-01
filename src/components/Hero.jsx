@@ -8,8 +8,8 @@ export const Hero = props => {
   const { description, image, tag, title } = props
 
   return (
-    <div className="container">
-      <div className="flex relative -mt-12 lg:-mt-64 rounded-md overflow-hidden bg-blue-400">
+    <div className="w-full -mt-1 rounded-md h-40 lg:h-64 overflow-hidden">
+      <div className="flex relative bg-blue-400">
         {/*<Img
           alt={title}
           className="grayscale-1 blend-multiply"
@@ -22,15 +22,11 @@ export const Hero = props => {
         <video autoPlay loop>
         <source src={heroVideo} type="video/mp4" />
         </video>
-        <div
-          className="absolute inset-0"
-        ></div>
-
-        <span className="absolute mt-16 lg:bottom-0 right-0 bg-blue-700 text-sm text-white font-medium px-3 py-1 rounded-lg m-4 tracking-wide">
+        <span className="absolute lg:bottom-0 right-0 bg-blue-700 text-sm text-white font-medium px-3 py-1 rounded-lg m-4 tracking-wide">
           {tag}
         </span>
 
-        <div className="absolute bottom-0 inset-x-0 p-5 lg:p-6 text-white">
+        <div className="absolute mt-4 lg:mt-12 p-5 lg:p-6 text-white">
           <h1 className="text-2xl lg:text-4xl font-bold leading-tight">
             {title}
           </h1>

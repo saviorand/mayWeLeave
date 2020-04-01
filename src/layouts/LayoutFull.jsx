@@ -4,9 +4,7 @@ import { Footer, SignupForm } from "../components"
 
 export const LayoutFull = ({ children }) => {
   return (
-    <>
-      <header className="bg-white">
-      </header>
+    <div className="container bg-white">
       {children}
       <div className="bg-white py-8 lg:py-16 mt-8">
         <div className="container">
@@ -14,6 +12,6 @@ export const LayoutFull = ({ children }) => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }

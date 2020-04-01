@@ -7,10 +7,10 @@ export const Cards = props => {
 
   return (
     <div className="container pt-6 overflow-hidden">
-      <div className="-mx-3 xl:-mx-6">
+      <div className="-mx-4 xl:-mx-6">
         {nodes.map((item, i) => (
           <div
-            className="px-3 xl:px-6 py-1"
+            className="py-1"
             key={`card_${item.data.slug}`}
           >
             <Card
