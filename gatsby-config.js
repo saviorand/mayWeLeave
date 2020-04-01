@@ -6,7 +6,7 @@ module.exports = {
       twitter: "https://twitter.com/ValentineErokh1",
     },
     locale: "en",
-    title: "Schedule of open borders",
+    title: "Schedule of open borders.",
   },
   plugins: [
     `gatsby-plugin-postcss`,
