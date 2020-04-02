@@ -7,7 +7,7 @@ export const Cards = props => {
 
   return (
     <div className="container pt-6 overflow-hidden">
-      <div className="-mx-4 xl:-mx-6">
+      <div className="">
         {nodes.map((item, i) => (
           <div
             className="py-1"

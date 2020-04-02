@@ -25,7 +25,7 @@ export const Footer = () => {
   `)
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-white -mb-4">
       <div className="container pt-12 pb-12 flex flex-wrap text-center lg:flex-row-reverse lg:justify-between lg:items-center">
         <ul className="w-full lg:w-auto">
           <FooterIconLink
