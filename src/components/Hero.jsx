@@ -8,7 +8,7 @@ export const Hero = props => {
   const { description, image, tag, title } = props
 
   return (
-    <div className="w-full -mt-1 rounded-md h-full overflow-hidden">
+    <div className="w-full -mt-1 rounded-md h-40 lg:h-64 overflow-hidden">
       <div className="flex relative bg-blue-400">
         {/*<Img
           alt={title}
@@ -22,15 +22,15 @@ export const Hero = props => {
         <video autoPlay loop>
         <source src={heroVideo} type="video/mp4" />
         </video>
-        <span className="absolute bottom-0 right-0 bg-blue-700 text-sm text-white font-medium px-3 py-1 rounded-lg m-8 tracking-wide">
+        <span className="absolute lg:bottom-0 right-0 bg-blue-700 text-sm text-white font-medium px-3 py-1 rounded-lg m-4 tracking-wide">
           {tag}
         </span>
 
-        <div className="absolute mt-12 lg:mt-24 p-5 lg:p-6 text-white">
-          <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+        <div className="absolute mt-4 lg:mt-12 p-5 lg:p-6 text-white">
+          <h1 className="text-2xl lg:text-4xl font-bold leading-tight">
             {title}
           </h1>
-          <h3 className="text-2xl font-medium md:w-2/3">{description}</h3>
+          <h3 className="text-lg font-medium md:w-2/3">{description}</h3>
         </div>
       </div>
     </div>

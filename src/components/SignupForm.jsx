@@ -4,7 +4,7 @@ export const SignupForm = () => {
   
   return (
     <form action="//" target="_blank" method="post">
-      <div className="flex flex-wrap px-4 lg:justify-between lg:items-center">
+      <div className="flex flex-wrap lg:justify-between lg:items-center">
         <div>
           <h3 className="text-2xl lg:text-4xl font-bold text-blue-500 tracking-tight">
             Get notified when it's safe to go
