@@ -13,7 +13,7 @@ export const SignupForm = () => {
             Want to receive a personal letter when the borders open in your country?
           </p>
         </div>
-        <div className="flex bg-blue-600 py-4 px-6 rounded-full w-full mt-8 md:w-1/2 lg:w-auto">
+        <div className="flex justify-center bg-blue-600 py-4 px-6 rounded-full w-full mt-8 md:w-1/2 lg:w-auto">
         <a className="gumroad-button" href="https://gum.co/lGAcCX" target="_blank" rel="noopener noreferrer">Get notified</a>
 
 
