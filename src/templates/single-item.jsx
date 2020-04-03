@@ -4,6 +4,8 @@ import React from "react"
 import { Feature, SiteMetadata } from "../components"
 import { useModal } from "../context"
 import { Layout } from "../layouts/Layout"
+import DataConditional from "../components/DataConditional.jsx"
+
 
 export default props => {
   const { data, location } = props
@@ -37,8 +39,10 @@ export default props => {
               <Img fluid={cover.childImageSharp.fluid} alt={name} />
             </div>*/}
             <div className="w-full ">
-              <Feature label="Country" value={country} />
-              <Feature label="What to see?" value={tags} />
+            <div className='py-2'>
+            <DataConditional text={country}/>
+            </div>
+              <Feature label="Is it open?" value={tags} />
               <Feature label="More info" value={url} />
               <p className="mt-4 whitespace-pre-line text-sm lg:text-base leading-normal text-blue-900">
                 {description}
