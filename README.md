@@ -1,55 +1,20 @@
-# Airtable listing theme for Gatsby
+# Airtable-integrated listing website
 
-### Gatsby starter theme integrated with [Airtable](https://airtable.com/)
+### Integrated with [Airtable](https://airtable.com/)
 
-## Demo
+## Live demo
 
-Live demo is available at: https://gatsby-airtable-listing.netlify.com/
+Find live demo at https://mayweleave.com/
 
-## Screenshot
+## How to use
 
-![The home page](screenshot.png?raw=true)
+### Set up Airtable integration
 
-## Features
-
-- Integration with [Airtable](https://airtable.com/)
-- Item details displayed in a modal with navigation (previous / next)
-- Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
-- Uses utility-first [TailwindCSS](https://tailwindcss.com/) framework
-- Responsive design (desktop / mobile)
-- Generic newsletter form
-
-## 🚀 Getting started
-
-Install [Node package manager (NPM)](https://nodejs.org/) (if you haven't already).
-
-### Get the source code and install dependencies.
-
-```
-$ git clone git@github.com:wkocjan/gatsby-airtable-listing.git
-$ npm install
-```
-
-### Create Airtable base
-
-To use this project you have to have a Airtable account.
-
-Once you have it, go to [this base](https://airtable.com/shrlYuICEwEdAUir3) and click `Copy base` button located in the top right corner.
-
-Included columns:
-
-- `name` (single line text)
-- `slug` (single line text, should be unique)
-- `summary` (single line text)
-- `image` (attachment)
-- `descrition` (long text)
-- `country` (single select)
-- `tags` (multiple select)
-- `url` (single line text)
+Sign up an Airtable account. When you have an account go to [this base](https://airtable.com/shrlYuICEwEdAUir3) and click `Copy base` button at the top right corner of the interface
 
 ### Set up Airtable API keys
 
-Copy included `.env.example` file to `.env` and fill it with your unique values:
+Copy the `.env.example` file to `.env` and fill it with your unique values:
 
 ```
 AIRTABLE_API_KEY=""
@@ -57,18 +22,17 @@ AIRTABLE_BASE_ID=""
 AIRTABLE_TABLE_NAME=""
 ```
 
-You can find your API key and Base ID by clicking "Help" and then "API Documentation". Table name in the example is "Destinations" (case sensitive name).
+Your API key and Base ID are in "Help" -> "API Documentation". 
+Example table name is "Destinations" (note this is case-sensitive).
 
-You're now ready to go. If you want to customize the Airtable base, please refer to [`gatsby-source-airtable` plugin documentation](https://www.gatsbyjs.org/packages/gatsby-source-airtable/).
+If you want to customize the database refer to [`gatsby-source-airtable` plugin documentation](https://www.gatsbyjs.org/packages/gatsby-source-airtable/).
 
-## Crucial Commands
-
-This project comes with a few handy commands for linting and code fixing. The most important ones are the ones to develop and ship code. You can find the most important commands below.
+## Run commands
 
 #### `gatsby develop`
 
-Run in the project locally.
+Start the project on your localhost
 
 #### `gatsby build`
 
-Run a production build into `./public`. The result is ready to be put on any static hosting you prefer.
+Serve a production build to the `./public` folder (this can be served on a static hosting like Netlify or ZEIT)
