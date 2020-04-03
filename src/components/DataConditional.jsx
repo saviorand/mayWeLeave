@@ -14,7 +14,7 @@ class DataConditional extends React.Component {
    let myRegex = /[1-9]+/g;
    let myMatch = JSON.stringify(myDaysRemaining).match(myRegex);
    let theNumber = parseInt(myMatch);
-   let countedDown = (theNumber - 1);
+   let countedDown = (theNumber - 2);
 
    let finalCount = (JSON.stringify(myDaysRemaining).replace(myMatch, countedDown).replace('"', ''));
 
