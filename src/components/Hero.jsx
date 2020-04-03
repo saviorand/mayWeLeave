@@ -1,11 +1,11 @@
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import React from "react"
 import heroVideo from "../images/pexelshero.mp4"
 
 export const Hero = props => {
-  const { description, image, tag, title } = props
+  const { description, /*image,*/ tag, title } = props
 
   return (
     <div className="w-full -mt-1 rounded-md h-40 lg:h-64 overflow-hidden">
@@ -22,6 +22,9 @@ export const Hero = props => {
         <video autoPlay loop>
         <source src={heroVideo} type="video/mp4" />
         </video>
+        <track default kind="captions"
+           srclang="en"
+           src="/herodescription.vtt"/>
         <span className="absolute lg:bottom-0 right-0 bg-blue-700 text-sm text-white font-medium px-3 py-1 rounded-lg m-4 tracking-wide">
           {tag}
         </span>

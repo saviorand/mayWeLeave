@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import {
-  FaEnvelope,
+  /*FaEnvelope,
   FaFacebookF,
-  FaLinkedinIn,
+  FaLinkedinIn*/
   FaTwitter,
 } from "react-icons/fa"
 

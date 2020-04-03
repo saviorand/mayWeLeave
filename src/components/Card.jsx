@@ -3,8 +3,9 @@ import Img from "gatsby-image"
 import { Link } from "gatsby-plugin-modal-routing"
 import PropTypes from "prop-types"
 import React from "react"
-import { Feature } from "."
+// import { Feature } from "."
 import DataPoint from "./DataPoint.jsx"
+import DataConditional from "./DataConditional.jsx"
 
 export const Card = props => {
   const {
@@ -17,6 +18,8 @@ export const Card = props => {
     slug,
     summary,
   } = props
+
+
 
   return (
     <div className="p-2 shadow-sm rounded-md hover:bg-blue-100">
@@ -36,7 +39,7 @@ export const Card = props => {
 
           <div className="flex flex-wrap justify-between">
 
-        <DataPoint text={country}/>
+        <DataConditional text={country}/>
         <DataPoint text={summary}/>
 
         </div>

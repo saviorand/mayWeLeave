@@ -1,5 +1,5 @@
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import React from "react"
 import { Feature, SiteMetadata } from "../components"
 import { useModal } from "../context"
