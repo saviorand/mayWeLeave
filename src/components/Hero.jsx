@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import heroVideo from "../images/pexelshero.mp4"
+import PHBadge from "./PHbadge.jsx"
 
 export const Hero = props => {
   const { description, /*image,*/ tag, title } = props
@@ -25,11 +26,11 @@ export const Hero = props => {
         <track default kind="captions"
            srclang="en"
            src="/herodescription.vtt"/>
-        <span className="absolute lg:bottom-0 right-0 bg-blue-700 text-sm text-white font-medium px-3 py-1 rounded-lg m-4 tracking-wide">
-          {tag}
-        </span>
+        <span className="absolute right-0 text-sm text-white font-medium px-3   rounded-lg m-4 tracking-wide">
+        <PHBadge />
 
-        <div className="absolute mt-4 lg:mt-12 p-5 lg:p-6 text-white">
+        </span>
+        <div className="absolute mt-12 p-5 lg:p-6 text-white">
           <h1 className="text-2xl lg:text-4xl font-bold leading-tight">
             {title}
           </h1>
