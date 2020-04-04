@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import heroVideo from "../images/pexelshero.mp4"
-import PHBadge from "./PHbadge.jsx"
+import PHBadge from "./PHBadge.jsx"
 
 export const Hero = props => {
   const { description, /*image,*/ tag, title } = props
