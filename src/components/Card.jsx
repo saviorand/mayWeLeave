@@ -27,11 +27,11 @@ export const Card = props => {
       <Link to={`/${slug}`} state={{ navigation }} asModal className="">
 
         <div className="flex w-full h-16 md:h-24 overflow-hidden items-center shadow-sm rounded-md hover:bg-blue-100">
-        <div className="flex flex-wrap justify-start items-center w-2/5 md:w-1/5  rounded-l-md border-solid border-gray-400 border-t-2 border-b-2 border-l-2 h-full">
+        <div className="flex flex-col flex-wrap justify-start items-center w-2/5 md:w-1/5  rounded-l-md border-solid border-gray-400 border-t-2 border-b-2 border-l-2 h-full">
           <div className="w-8 mx-auto">
           <Img fluid={cover.childImageSharp.fluid} alt={name} />
           </div>
-
+          
           <h1 className="text-sm md:text-md lg:text-lg text-blue-600 font-bold leading-snug mx-auto">
             {name}
           </h1>
