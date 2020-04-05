@@ -22,7 +22,7 @@ class DataConditional extends React.Component {
     return (
 
        <div className="flex items-center w-1/2 justify-center border-solid rounded-r-md border-gray-300 border-2 h-full">
-           <p className="text-base text-center text-blue-900 font-medium my-auto">{finalCount.replace('"', '').replace('NaN', '')}</p>
+           <p className="text-sm md:text-base text-center text-blue-900 font-medium my-auto">{finalCount.replace('"', '').replace('NaN', '')}</p>
         </div>
 
   	)
