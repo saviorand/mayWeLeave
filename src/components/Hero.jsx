@@ -9,7 +9,7 @@ export const Hero = props => {
   const { description, /*image, tag,*/ title } = props
 
   return (
-    <div className="w-full -mt-1 rounded-md h-40 lg:h-64 overflow-hidden border-2 border-solid border-gray-300">
+    <div className="w-full -mt-1 rounded-md h-40 lg:h-64 overflow-hidden border-2 border-solid border-gray-400">
       <div className="flex relative bg-blue-400">
         {/*<Img
           alt={title}
