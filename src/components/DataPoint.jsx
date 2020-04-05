@@ -6,8 +6,8 @@ class DataPoint extends React.Component {
     
     return (
 
-       <div className="mx-8 p-2 my-1 rounded-md border-solid border-gray-300 border-2">
-           <p className="text-base text-blue-900 font-medium">{this.props.text}</p>
+       <div className="flex items-center justify-center w-1/2 border-solid border-gray-300 border-l-2 border-t-2 border-b-2 h-full">
+           <p className="text-base text-center text-blue-900 font-medium my-auto">{this.props.text}</p>
         </div>
 
   	)

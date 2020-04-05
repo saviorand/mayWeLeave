@@ -4,7 +4,7 @@ import React from "react"
 import { Feature, SiteMetadata } from "../components"
 import { useModal } from "../context"
 import { Layout } from "../layouts/Layout"
-import DataConditional from "../components/DataConditional.jsx"
+// import DataConditional from "../components/DataConditional.jsx"
 
 
 export default props => {
@@ -17,8 +17,8 @@ export default props => {
     },
     name,
     summary,
-    tags,
-    url,
+    /*tags,
+    url,*/
   } = data.item.data
   const navigation = location.state ? location.state.navigation : null
   const { modal } = useModal()
@@ -37,13 +37,13 @@ export default props => {
           <div className="flex flex-wrap justify-center">
             {/*<div className="w-full pb-4 lg:w-3/5 lg:pr-4 lg:pb-0">
               <Img fluid={cover.childImageSharp.fluid} alt={name} />
-            </div>*/}
+            </div>
+            <DataConditional text={country}/>*/}
             <div className="w-full ">
             <div className='py-2'>
-            <DataConditional text={country}/>
             </div>
-              <Feature label="Is it open?" value={tags} />
-              <Feature label="More info" value={url} />
+              <Feature label="When will we have more information?" value={country} />
+              {/*<Feature label="More info" value={url} />*/}
               <p className="mt-4 whitespace-pre-line text-sm lg:text-base leading-normal text-blue-900">
                 {description}
               </p>

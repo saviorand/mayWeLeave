@@ -14,15 +14,15 @@ class DataConditional extends React.Component {
    let myRegex = /[1-9]+/g;
    let myMatch = JSON.stringify(myDaysRemaining).match(myRegex);
    let theNumber = parseInt(myMatch);
-   let countedDown = (theNumber - 2);
+   let countedDown = (theNumber - 0);
 
    let finalCount = (JSON.stringify(myDaysRemaining).replace(myMatch, countedDown).replace('"', ''));
 
   
     return (
 
-       <div className="mx-8 p-2 my-1 rounded-md border-solid border-gray-300 border-2">
-           <p className="text-base text-blue-900 font-medium">{finalCount.replace('"', '').replace('NaN', '')}</p>
+       <div className="flex items-center w-1/2 justify-center border-solid rounded-r-md border-gray-300 border-2 h-full">
+           <p className="text-base text-center text-blue-900 font-medium my-auto">{finalCount.replace('"', '').replace('NaN', '')}</p>
         </div>
 
   	)
