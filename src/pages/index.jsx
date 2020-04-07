@@ -11,14 +11,12 @@ export default ({ data }) => {
         description="Check when the borders in your country will open again."
         image={data.hero.url}
       />
-
       <Hero
         image={data.hero}
         tag="#stayhome"
         title="May we leave?"
         description="It's not responsible to travel now. But here's when you can go again"
       />
-
       <Cards nodes={data.items.nodes} />
     </Layout>
   )
